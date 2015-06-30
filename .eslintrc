@@ -1,1 +1,11 @@
-{}
+{
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "quote-props": [2, "as-needed"],
+    "quotes": [2, "single"],
+    "strict": [2, "never"],
+  }
+}
