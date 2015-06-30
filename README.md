@@ -55,8 +55,8 @@ If you're working on a UI project that uses browserify:
 Apache 2.0
 
 [shareable-configs]: http://eslint.org/docs/developer-guide/shareable-configs
-[travis_img]: https://img.shields.io/travis/mongodb-js/eslint-config-mongodb-js.svg
-[travis_url]: https://travis-ci.org/mongodb-js/eslint-config-mongodb-js
+[travis_img]: https://img.shields.io/travis/mongodb-js/eslint-config.svg
+[travis_url]: https://travis-ci.org/mongodb-js/eslint-config
 [npm_img]: https://img.shields.io/npm/v/eslint-config-mongodb-js.svg
 [npm_url]: https://npmjs.org/package/eslint-config-mongodb-js
 [mongodb-js]: http://mongodb-js.github.io/
