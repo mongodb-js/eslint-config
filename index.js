@@ -5,18 +5,18 @@
 
 module.exports = {
   rules: {
-    'brace-style': [2, '1tbs', { 'allowSingleLine': true }],
+    'brace-style': [2, '1tbs', { allowSingleLine: true }],
     // We deal with snake_case in a lot of integrations, so disable this. But generally, follow this rule.
-    'camelcase': 0,
+    camelcase: 0,
     'comma-style': [2, 'last'],
     'consistent-this': [0, 'self'],
-    'curly': [2, 'multi-line'],
+    curly: [2, 'multi-line'],
     'default-case': 2,
     'dot-location': [2, 'property'],
-    'dot-notation': [2, { 'allowKeywords': true }],
+    'dot-notation': [2, { allowKeywords: true }],
     'generator-star-spacing': [2, 'after'],
     'guard-for-in': 2,
-    'indent': [2, 2],
+    indent: [2, 2],
     'max-depth': [1, 6],
     'max-len': [1, 100, 2],
     'max-nested-callbacks': [1, 6],
@@ -27,7 +27,7 @@ module.exports = {
     'no-floating-decimal': 2,
     'no-inline-comments': 0,
     'no-lonely-if': 2,
-    'no-multiple-empty-lines': [2, {'max': 2}],
+    'no-multiple-empty-lines': [2, {max: 2}],
     'no-nested-ternary': 2,
     'no-new-require': 2,
     'no-self-compare': 2,
@@ -42,27 +42,27 @@ module.exports = {
     'operator-linebreak': [2, 'before'],
     'padded-blocks': [2, 'never'],
     'quote-props': [2, 'as-needed'],
-    'quotes': [2, 'single'],
-    'radix': 2,
+    quotes: [2, 'single'],
+    radix: 2,
     'space-after-keywords': [2, 'always'],
     'space-before-blocks': [1, 'always'],
     'space-before-function-paren': [2, 'never'],
     'space-in-parens': [2, 'never'],
     'spaced-line-comment': [2, 'always'],
-    'strict': [2, 'global'],
+    strict: [2, 'never'],
     // FIXME: https://github.com/eslint/eslint/issues/2108
     // In order to really get benefit from this rule we need to either fix the
     // above issue or stop adding a newline between our functions and their
     // corresponding JSDoc block
     'valid-jsdoc': [1, {
-      'prefer': {
-        'returns': 'return'
+      prefer: {
+        returns: 'return'
       },
-      'requireReturn': false,
-      'requireReturnDescription': false
+      requireReturn: false,
+      requireReturnDescription: false
     }],
     'wrap-iife': [2, 'outside'],
     'wrap-regex': 2,
-    'yoda': [1, 'never']
+    yoda: [1, 'never']
   }
 };
