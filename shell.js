@@ -11,23 +11,7 @@ module.exports = merge({}, base, {
   /**
    * @todo (imlucas) Track down more globals from http://github.com/mongodb-js/shell
    */
-  globals: {
-    print: true,
-    load: true,
-    gc: true,
-    MinKey: true,
-    MaxKey: true,
-    Mongo: true,
-    NumberInt: true,
-    NumberLong: true,
-    ObjectId: true,
-    DBPointer: true,
-    UUID: true,
-    BinData: true,
-    HexData: true,
-    MD5: true,
-    Map: true,
-    Timestamp: true,
-    JSON: true
+  env: {
+    mongodb: true
   }
 });
