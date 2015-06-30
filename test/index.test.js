@@ -29,6 +29,6 @@ describe('eslint-config-mongodb-js', function () {
   });
   it('should a config for the mongo shell', function(){
     var config = require('../shell');
-    assert(isObject(config.globals));
+    assert(config.env.mongodb);
   });
 });
