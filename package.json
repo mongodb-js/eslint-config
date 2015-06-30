@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config-mongodb-js",
+  "description": "eslint sharable configs for mongodb-js.",
+  "version": "0.0.0",
+  "author": "Lucas Hrabovsky <lucas@mongodb.com> (http://imlucas.com)",
+  "homepage": "http://github.com/mongodb-js/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mongodb-js/eslint-config.git"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "eslint": "0.x",
+    "eslint-plugin-react": "^2.3.0",
+    "lodash.merge": "^3.3.2"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "mongodb.js"
+  ],
+  "scripts": {
+    "ci": "mocha",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
