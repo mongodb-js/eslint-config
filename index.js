@@ -7,7 +7,7 @@ module.exports = {
     'brace-style': [2, '1tbs', {
       allowSingleLine: true
     }],
-    camelcase: [2, 'always'],
+    camelcase: 0,
     'comma-style': [2, 'last'],
     'consistent-this': [0, 'self'],
     curly: [2, 'multi-line'],
