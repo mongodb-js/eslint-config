@@ -2,18 +2,20 @@
  * Base configuration. This contains settings shared across all types of
  * JavaScript projects--ES6, frontend, Node, JSX, or any combination thereof.
  */
-
 module.exports = {
   rules: {
-    'brace-style': [2, '1tbs', { allowSingleLine: true }],
-    // We deal with snake_case in a lot of integrations, so disable this. But generally, follow this rule.
-    camelcase: 0,
+    'brace-style': [2, '1tbs', {
+      allowSingleLine: true
+    }],
+    camelcase: [2, 'always'],
     'comma-style': [2, 'last'],
     'consistent-this': [0, 'self'],
     curly: [2, 'multi-line'],
     'default-case': 2,
     'dot-location': [2, 'property'],
-    'dot-notation': [2, { allowKeywords: true }],
+    'dot-notation': [2, {
+      allowKeywords: true
+    }],
     'generator-star-spacing': [2, 'after'],
     'guard-for-in': 2,
     indent: [2, 2],
@@ -27,7 +29,9 @@ module.exports = {
     'no-floating-decimal': 2,
     'no-inline-comments': 0,
     'no-lonely-if': 2,
-    'no-multiple-empty-lines': [2, {max: 2}],
+    'no-multiple-empty-lines': [2, {
+      max: 2
+    }],
     'no-nested-ternary': 2,
     'no-new-require': 2,
     'no-self-compare': 2,
@@ -49,11 +53,7 @@ module.exports = {
     'space-before-function-paren': [2, 'never'],
     'space-in-parens': [2, 'never'],
     'spaced-line-comment': [2, 'always'],
-    strict: [2, 'never'],
-    // FIXME: https://github.com/eslint/eslint/issues/2108
-    // In order to really get benefit from this rule we need to either fix the
-    // above issue or stop adding a newline between our functions and their
-    // corresponding JSDoc block
+    strict: [1, 'never'],
     'valid-jsdoc': [1, {
       prefer: {
         returns: 'return'
