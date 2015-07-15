@@ -3,6 +3,9 @@
  * JavaScript projects--ES6, frontend, Node, JSX, or any combination thereof.
  */
 module.exports = {
+  env: {
+    mocha: true
+  },
   rules: {
     'brace-style': [2, '1tbs', {
       allowSingleLine: true
@@ -59,7 +62,8 @@ module.exports = {
         returns: 'return'
       },
       requireReturn: false,
-      requireReturnDescription: false
+      requireReturnDescription: false,
+      requireParamDescription: false
     }],
     'wrap-iife': [2, 'outside'],
     'wrap-regex': 2,
