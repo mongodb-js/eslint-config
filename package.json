@@ -10,20 +10,20 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "eslint": "0.x",
-    "eslint-plugin-react": "^2.3.0",
+    "eslint-plugin-react": "^3.4.2",
     "lodash.merge": "^3.3.2"
   },
   "keywords": [
     "eslint",
     "eslintconfig",
-    "mongodb.js"
+    "mongodb-js"
   ],
   "scripts": {
     "ci": "mocha",
     "test": "mocha"
   },
   "devDependencies": {
-    "mocha": "^2.2.5"
+    "eslint": "^1.5.1",
+    "mocha": "^2.3.3"
   }
 }
