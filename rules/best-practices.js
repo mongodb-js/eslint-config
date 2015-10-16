@@ -126,7 +126,10 @@ module.exports = {
     // require use of the second argument for parseInt()
     radix: ERROR,
     // requires to declare all vars on top of their containing scope
-    'vars-on-top': ERROR,
+    /**
+     * @differ - YOU BE YOU, DEVELOPER.
+     */
+    'vars-on-top': IGNORE,
     // require immediate function invocation to be wrapped in parentheses
     'wrap-iife': [ERROR, 'any'],
     // require or disallow Yoda conditions
