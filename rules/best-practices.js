@@ -90,7 +90,10 @@ module.exports = {
     // var foo = 'Copyright \251';
     'no-octal-escape': ERROR,
     // disallow reassignment of function parameters
-    'no-param-reassign': ERROR,
+    /**
+     * @differ - Breaks `module.exports = function(opts, fn){}` convention.
+     */
+    'no-param-reassign': IGNORE,
     // disallow use of process.env
     'no-process-env': IGNORE,
     // disallow usage of __proto__ property
