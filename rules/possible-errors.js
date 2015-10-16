@@ -13,7 +13,10 @@ var IGNORE = config.IGNORE;
 module.exports = {
   rules: {
     // disallow trailing commas in object literals
-    'comma-dangle': [ERROR, 'always-multiline'],
+    /**
+     * @differ - This is what transform tools are for.
+     */
+    'comma-dangle': [ERROR, 'never'],
     // disallow assignment in conditional expressions
     'no-cond-assign': [ERROR, 'always'],
     // disallow use of console
