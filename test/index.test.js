@@ -14,18 +14,18 @@ describe('eslint-config-mongodb-js', function() {
   });
   it('should a config for node', function() {
     var config = require('../node');
-    assert(isObject(config.rules));
+    assert(Array.isArray(config.extends));
     assert(isObject(config.env));
   });
   it('should a config for the browser', function() {
     var config = require('../browser');
-    assert(isObject(config.rules));
+    assert(Array.isArray(config.extends));
     assert(isObject(config.env));
   });
   it('should a config for react', function() {
     var config = require('../react');
+    assert(Array.isArray(config.extends));
     assert(isObject(config.rules));
-    assert(isObject(config.env));
     assert(isObject(config.ecmaFeatures));
     assert.equal(config.plugins[0], 'react');
   });

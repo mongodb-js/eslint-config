@@ -1,72 +1,97 @@
 /**
- * Base configuration. This contains settings shared across all types of
- * JavaScript projects--ES6, frontend, Node, JSX, or any combination thereof.
+ * Base
+ *
+ * This contains settings shared across all environments.
  */
 module.exports = {
   env: {
     mocha: true
   },
-  rules: {
-    'brace-style': [2, '1tbs', {
-      allowSingleLine: true
-    }],
-    camelcase: 0,
-    'comma-style': [2, 'last'],
-    'consistent-this': [0, 'self'],
-    curly: [2, 'multi-line'],
-    'default-case': 2,
-    'dot-location': [2, 'property'],
-    'dot-notation': [2, {
-      allowKeywords: true
-    }],
-    'generator-star-spacing': [2, 'after'],
-    'guard-for-in': 2,
-    indent: [2, 2],
-    'max-depth': [1, 6],
-    'max-len': [1, 100, 2],
-    'max-nested-callbacks': [1, 6],
-    'max-params': [1, 5],
-    'no-bitwise': 2,
-    'no-else-return': 2,
-    'no-extra-parens': 2,
-    'no-floating-decimal': 2,
-    'no-inline-comments': 0,
-    'no-lonely-if': 2,
-    'no-multiple-empty-lines': [2, {
-      max: 2
-    }],
-    'no-nested-ternary': 2,
-    'no-new-require': 2,
-    'no-self-compare': 2,
-    'no-shadow': 0,
-    'no-throw-literal': 2,
-    'no-underscore-dangle': 0,
-    'no-unneeded-ternary': 2,
-    'no-use-before-define': [2, 'nofunc'],
-    'no-void': 2,
-    'one-var': [2, 'never'],
-    'object-curly-spacing': [1, 'always'],
-    'operator-linebreak': [2, 'before'],
-    'padded-blocks': [2, 'never'],
-    'quote-props': [2, 'as-needed'],
-    quotes: [2, 'single'],
-    radix: 2,
-    'space-after-keywords': [2, 'always'],
-    'space-before-blocks': [1, 'always'],
-    'space-before-function-paren': [2, 'never'],
-    'space-in-parens': [2, 'never'],
-    'spaced-comment': [2, 'always'],
-    strict: [1, 'never'],
-    'valid-jsdoc': [1, {
-      prefer: {
-        returns: 'return'
-      },
-      requireReturn: false,
-      requireReturnDescription: false,
-      requireParamDescription: false
-    }],
-    'wrap-iife': [2, 'outside'],
-    'wrap-regex': 2,
-    yoda: [1, 'never']
-  }
+  extends: [
+    'eslint-config-mongodb-js/rules/best-practices',
+    /**
+     * @todo (imlucas): Someday....
+     * 'eslint-config-mongodb-js/rules/ecmascript-6',
+     */
+    'eslint-config-mongodb-js/rules/nodejs-and-commonjs',
+    'eslint-config-mongodb-js/rules/possible-errors',
+    'eslint-config-mongodb-js/rules/strict-mode',
+    'eslint-config-mongodb-js/rules/stylistic-issues',
+    'eslint-config-mongodb-js/rules/variables'
+  ],
+  rules: {}
 };
+
+// module.exports = {
+//   env: {
+//     mocha: true
+//   },
+//   rules: {
+//     'brace-style': [ERROR, '1tbs', {
+//       allowSingleLine: true
+//     }],
+//     camelcase: IGNORE,
+//     'comma-style': [ERROR, 'last'],
+//     'consistent-this': [IGNORE, 'self'],
+//     curly: [ERROR, 'multi-line'],
+//     'default-case': ERROR,
+//     'dot-location': [ERROR, 'property'],
+//     'dot-notation': [ERROR, {
+//       allowKeywords: true
+//     }],
+//     'generator-star-spacing': [ERROR, 'after'],
+//     'guard-for-in': ERROR,
+//     indent: [ERROR, 2],
+//     'max-depth': [WARN, 6],
+//     'max-len': [WARN, 100, 2],
+//     'max-nested-callbacks': [WARN, 6],
+//     'max-params': [WARN, 5],
+//     'no-bitwise': ERROR,
+//     'no-else-return': ERROR,
+//     'no-extra-parens': ERROR,
+//     'no-floating-decimal': ERROR,
+//     'no-inline-comments': IGNORE,
+//     'no-lonely-if': ERROR,
+//     'no-multiple-empty-lines': [ERROR, {
+//       max: 2
+//     }],
+//     'no-nested-ternary': ERROR,
+//     'no-new-require': ERROR,
+//     'no-self-compare': ERROR,
+//     'no-shadow': IGNORE,
+//     'no-throw-literal': ERROR,
+//     'no-underscore-dangle': IGNORE,
+//     'no-unneeded-ternary': ERROR,
+//     'no-use-before-define': [ERROR, 'nofunc'],
+//     'no-void': ERROR,
+//     'one-var': [ERROR, 'never'],
+//     'object-curly-spacing': [1, 'always'],
+//     'operator-linebreak': [ERROR, 'before'],
+//     'padded-blocks': [ERROR, 'never'],
+//     'quote-props': [ERROR, 'as-needed'],
+//     quotes: [ERROR, 'single'],
+//     radix: ERROR,
+//     'space-after-keywords': [ERROR, 'always'],
+//     'space-before-blocks': [1, 'always'],
+//     'space-before-function-paren': [ERROR, 'never'],
+//     'space-in-parens': [ERROR, 'never'],
+//     'spaced-comment': [ERROR, 'always'],
+//     strict: [WARN, 'never'],
+//     'valid-jsdoc': [WARN, {
+//       prefer: {
+//         returns: 'return'
+//       },
+//       requireReturn: false,
+//       requireReturnDescription: false,
+//       requireParamDescription: false
+//     }],
+//     'wrap-iife': [ERROR, 'outside'],
+//     'wrap-regex': ERROR,
+//     yoda: [WARN, 'never']
+//   },
+//   globals: {
+//     require: true,
+//     module: true,
+//     exports: true
+//   }
+// };

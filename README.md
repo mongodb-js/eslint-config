@@ -6,8 +6,8 @@
 
 Shareable configs are designed to work with the `extends` feature
 of `.eslintrc` files. This allows us to easily extend from a base
-configuration to provide the right rules for all of the various
-types of modules we work on:
+configuration to provide the right rules for all of the extensive
+range of environments we build modules for:
 
 - `mongodb-js`
 - `mongodb-js/node`
@@ -16,6 +16,13 @@ types of modules we work on:
 - `mongodb-js/react`
 
 You can learn more about [Shareable Configs][shareable-configs] on the official ESLint website.
+
+## Conventions
+
+Our eslint-config is based on [eslint-config-airbnb][eslint-config-airbnb].
+We make a best effort to explicitly call out any rules we differ from
+[eslint-config-airbnb][eslint-config-airbnb] will include a JSDoc
+comment of `@differ #{dang good reason}`.
 
 ## Examples
 
@@ -50,6 +57,16 @@ If you're working on a UI project that uses browserify:
 }
 ```
 
+## See Also
+
+- [mongodb-js-fmt][mongodb-js-fmt] Look no further if you're not a tailor and/or want
+  something that will just magically reformat your code to conform to these best practices.
+- [mongodb-js-precommit][mongodb-js-precommit] The first line of defense to fighting
+  bugs is not letting bad code into your project in the first place.
+- [eslint-plugin-mongodb][eslint-plugin-mongodb] Syntax guidance and best practices
+  reinforcement when using MongoDB node.js driver.
+
+
 ## License
 
 Apache 2.0
@@ -60,3 +77,7 @@ Apache 2.0
 [npm_img]: https://img.shields.io/npm/v/eslint-config-mongodb-js.svg
 [npm_url]: https://npmjs.org/package/eslint-config-mongodb-js
 [mongodb-js]: http://mongodb-js.github.io/
+[eslint-config-airbnb]: https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb
+[eslint-plugin-mongodb]: https://github.com/nfroidure/eslint-plugin-mongodb
+[mongodb-js-precommit]: https://github.com/mongodb-js/precommit
+[mongodb-js-fmt]: https://github.com/mongodb-js/fmt
