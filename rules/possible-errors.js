@@ -66,7 +66,18 @@ module.exports = {
     // disallow comparisons with the value NaN
     'use-isnan': ERROR,
     // ensure JSDoc comments are valid
-    'valid-jsdoc': WARNING,
+    /**
+     * @differ - No sense in requiring useless strings that need to be maintained
+     * manually that should be maintained by a default in tooling, e.g.
+     * no @return supplied and it takes a {Function}? then its always
+     * @return {Void}.  Also, requiring descriptions leads to nothing but
+     * rushed, copy+paste crap we don't want in there anyway. 
+     */
+    'valid-jsdoc': [WARNING, {
+      requireReturn: false,
+      requireParamDescription: false,
+      requireReturnDescription: false
+    }],
     // ensure that the results of typeof are compared against a valid string
     'valid-typeof': ERROR,
     // Avoid code that looks like two expressions but is actually one
