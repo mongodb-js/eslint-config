@@ -48,7 +48,7 @@ module.exports = {
       properties: 'never'
     }],
     // this option sets a specific tab width for your code
-    indent: [ERROR, 2],
+    indent: [ERROR, 2, {"SwitchCase": 1}],
     // specify whether double or single quotes should be used in JSX attributes
     'jsx-quotes': ERROR,
     // enforces spacing between keys and values in object literal properties
