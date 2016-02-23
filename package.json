@@ -24,7 +24,7 @@
   "devDependencies": {
     "babel-eslint": "^4.1.5",
     "eslint": "^1.9.0",
-    "eslint-plugin-react": "^3.8.0",
+    "eslint-plugin-react": "^4.1.0",
     "mocha": "^2.3.4",
     "mongodb-js-fmt": "0.0.3",
     "mongodb-js-precommit": "^0.2.8",
