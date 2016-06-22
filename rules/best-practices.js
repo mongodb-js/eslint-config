@@ -45,7 +45,7 @@ module.exports = {
     // disallow else after a return in an if
     'no-else-return': ERROR,
     // disallow use of labels for anything other then loops and switches
-    'no-empty-label': ERROR,
+    'no-labels': ERROR,
     // disallow comparisons to null without a type-checking operator
     'no-eq-null': IGNORE,
     // disallow use of eval()
