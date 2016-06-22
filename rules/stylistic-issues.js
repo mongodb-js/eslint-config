@@ -137,8 +137,6 @@ module.exports = {
     semi: [ERROR, 'always'],
     // sort variables within the same declaration block
     'sort-vars': IGNORE,
-    // require a space after certain keywords
-    'space-after-keywords': ERROR,
     // require or disallow space before blocks
     'space-before-blocks': ERROR,
     // require or disallow space before function opening parenthesis
