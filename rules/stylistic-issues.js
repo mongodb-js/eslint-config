@@ -58,6 +58,16 @@ module.exports = {
       beforeColon: false,
       afterColon: true
     }],
+    // require a space after return, throw, and case
+    'keyword-spacing': [2, {
+      before: true,
+      after: true,
+      overrides: {
+        return: { after: true },
+        throw: { after: true },
+        case: { after: true }
+      }
+    }],
     // enforces empty lines around comments
     'lines-around-comment': IGNORE,
     // disallow mixed 'LF' and 'CRLF' as linebreaks
@@ -137,8 +147,6 @@ module.exports = {
     'space-in-parens': IGNORE,
     // require spaces around operators
     'space-infix-ops': ERROR,
-    // require a space after return, throw, and case
-    'space-return-throw-case': ERROR,
     // Require or disallow spaces before/after unary operators
     'space-unary-ops': IGNORE,
     // require or disallow a space immediately following the // or /* in a comment
