@@ -37,7 +37,7 @@ module.exports = {
     // Prevent usage of dangerous JSX properties
     'react/no-danger': 0,
     // Prevent usage of setState in componentDidMount
-    'react/no-did-mount-set-state': [2, 'allow-in-func'],
+    'react/no-did-mount-set-state': 2,
     // Prevent usage of setState in componentDidUpdate
     'react/no-did-update-set-state': 2,
     // Prevent multiple component definition per file
@@ -51,7 +51,9 @@ module.exports = {
     // Restrict file extensions that may be required
     'react/require-extension': 0,
     // Prevent extra closing tags for components without children
-    'react/self-closing-comp': 2,
+    'react/self-closing-comp': [2, {
+      component: true
+    }],
     // Enforce component methods order
     'react/sort-comp': [2, {
       order: [
