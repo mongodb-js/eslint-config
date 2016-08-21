@@ -20,12 +20,13 @@
     "ci": "mocha",
     "test": "mocha"
   },
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "babel-eslint": "^6.0.0",
-    "eslint": "^2.5.3",
-    "eslint-plugin-react": "^5.2.2",
-    "mocha": "^2.3.4",
+    "eslint": "^3.3.1",
+    "eslint-plugin-react": "^6.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2",
     "mongodb-js-fmt": "0.0.3",
     "mongodb-js-precommit": "^0.2.8",
     "pre-commit": "^1.1.2"

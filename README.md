@@ -29,7 +29,7 @@ comment of `@differ #{dang good reason}`.
 To use the mongodb-js shareable config, first run:
 
 ```bash
-npm install --save-dev eslint eslint-config-mongodb-js
+npm install --save-dev eslint-config-mongodb-js
 ```
 
 The barebones mongodb-js `./.eslintrc` file looks like:
