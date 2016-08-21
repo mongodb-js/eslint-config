@@ -66,6 +66,6 @@ module.exports = {
       ]
     }],
     // Prevent missing parentheses around multilines JSX
-    'react/wrap-multilines': 2
+    'react/jsx-wrap-multilines': 2
   }
 };
