@@ -19,5 +19,11 @@ module.exports = {
     'eslint-config-mongodb-js/rules/stylistic-issues',
     'eslint-config-mongodb-js/rules/variables'
   ],
-  rules: {}
+  rules: {
+    'no-unused-expressions': 0,
+    'chai-friendly/no-unused-expressions': 2
+  },
+  plugins: [
+    'chai-friendly'
+  ]
 };
