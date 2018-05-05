@@ -30,7 +30,6 @@ describe('eslint-config-mongodb-js', function() {
     var config = require('../react');
     assert(Array.isArray(config.extends));
     assert(isObject(config.rules));
-    assert(isObject(config.ecmaFeatures));
     assert.equal(config.plugins[0], 'react');
   });
   

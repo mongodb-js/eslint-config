@@ -10,9 +10,6 @@ module.exports = {
   plugins: [
     'react'
   ],
-  ecmaFeatures: {
-    jsx: true
-  },
   rules: {
     // Prevent missing displayName in a React component definition
     'react/display-name': 0,
