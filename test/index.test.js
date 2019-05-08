@@ -17,6 +17,12 @@ describe('eslint-config-mongodb-js', function() {
     assert.equal(config.plugins[0], 'chai-friendly');
   });
 
+  it('should a config for a compass-plugin', function() {
+    var config = require('../compass-plugin');
+    assert(Array.isArray(config.extends));
+    assert.deepEqual(config.extends, ['eslint-config-mongodb-js/react']);
+  });
+
   it('should a config for node', function() {
     var config = require('../node');
     assert(Array.isArray(config.extends));

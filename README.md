@@ -9,11 +9,12 @@ of `.eslintrc` files. This allows us to easily extend from a base
 configuration to provide the right rules for all of the extensive
 range of environments we build modules for:
 
-- `mongodb-js`
+- `mongodb-js/compass-plugin`
+- `mongodb-js/react`
 - `mongodb-js/node`
 - `mongodb-js/browser`
 - `mongodb-js/shell`
-- `mongodb-js/react`
+
 
 You can learn more about [Shareable Configs][shareable-configs] on the official ESLint website.
 
@@ -24,7 +25,7 @@ We make a best effort to explicitly call out any rules we differ from
 [eslint-config-airbnb][eslint-config-airbnb] will include a JSDoc
 comment of `@differ #{dang good reason}`.
 
-## Examples
+## Usage
 
 To use the mongodb-js shareable config, first run:
 
@@ -32,29 +33,38 @@ To use the mongodb-js shareable config, first run:
 npm install --save-dev eslint-config-mongodb-js
 ```
 
-The barebones mongodb-js `./.eslintrc` file looks like:
+> *NOTE* You do not need to add multiple `extends: []` in your `.eslintrc`! The inheritance of the `mongodb-js/*` configs inherits bottom up. For example, `mongodb-js/compass-plugin` already includes `mongodb-js/react`.
+
+### `compass-plugin`
+
+If you're building a [MongoDB Compass Plugin](https://docs.mongodb.com/compass/master/plugins/creating-compass-plugins/), your `./.eslintrc` should be:
 
 ```json
-{
-  "extends": "mongodb-js"
-}
+{"extends": "mongodb-js/compass-plugin"}
 ```
 
-If your project runs primarily on the server, your `./.eslintrc`
-might look something like:
+### `react`
+
+For react modules, your `./.eslintrc` should be:
 
 ```json
-{
-  "extends": "mongodb-js/node"
-}
+{"extends": "mongodb-js/react"}
 ```
 
-If you're working on a UI project that uses browserify:
+### `node`
+
+For vanilla node.js projects, your `./.eslintrc` should be:
 
 ```json
-{
-  "extends": "mongodb-js/browser"
-}
+{"extends": "mongodb-js/node"}
+```
+
+### `node`
+
+If you're working on a UI project that uses browserify, your `./.eslintrc` should be:
+
+```json
+{"extends": "mongodb-js/browser"}
 ```
 
 ## Related
@@ -77,4 +87,3 @@ Apache 2.0
 [eslint-config-airbnb]: https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb
 [eslint-plugin-mongodb]: https://github.com/nfroidure/eslint-plugin-mongodb
 [mongodb-js-precommit]: https://github.com/mongodb-js/precommit
-[mongodb-js-fmt]: https://github.com/mongodb-js/fmt
