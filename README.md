@@ -76,6 +76,10 @@ If you're working on a UI project that uses browserify, your `./.eslintrc` shoul
 
 ## Changelog
 
+### 5.0.0
+
+- Upgrade to `eslint@5` #49
+
 ### 4.0.0
 
 - Adds `mongodb-js/compass-plugin` config #48
