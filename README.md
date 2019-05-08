@@ -59,7 +59,7 @@ For vanilla node.js projects, your `./.eslintrc` should be:
 {"extends": "mongodb-js/node"}
 ```
 
-### `node`
+### `browser`
 
 If you're working on a UI project that uses browserify, your `./.eslintrc` should be:
 
@@ -73,6 +73,12 @@ If you're working on a UI project that uses browserify, your `./.eslintrc` shoul
   bugs is not letting bad code into your project in the first place.
 - [eslint-plugin-mongodb][eslint-plugin-mongodb] Syntax guidance and best practices
   reinforcement when using MongoDB node.js driver.
+
+## Changelog
+
+### 4.0.0
+
+- Adds `mongodb-js/compass-plugin` config #48
 
 ## License
 
