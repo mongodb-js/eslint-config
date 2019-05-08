@@ -5,7 +5,13 @@
  */
 module.exports = {
   env: {
-    mocha: true
+    mocha: true,
+    expect: true,
+    sinon: true,
+    es6: true
+  },
+  parserOptions: {
+    ecmaVersion: 6
   },
   extends: [
     'eslint-config-mongodb-js/rules/best-practices',
