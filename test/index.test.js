@@ -9,7 +9,10 @@ describe('eslint-config-mongodb-js', function() {
     var config = require('../');
     assert(isObject(config.rules));
     assert.deepEqual(config.env, {
-      mocha: true
+      mocha: true,
+      expect: true,
+      sinon: true,
+      es6: true
     });
     assert.equal(config.plugins[0], 'chai-friendly');
   });
@@ -19,20 +22,20 @@ describe('eslint-config-mongodb-js', function() {
     assert(Array.isArray(config.extends));
     assert(isObject(config.env));
   });
-  
+
   it('should a config for the browser', function() {
     var config = require('../browser');
     assert(Array.isArray(config.extends));
     assert(isObject(config.env));
   });
-  
+
   it('should a config for react', function() {
     var config = require('../react');
     assert(Array.isArray(config.extends));
     assert(isObject(config.rules));
     assert.equal(config.plugins[0], 'react');
   });
-  
+
   it('should a config for the mongo shell', function() {
     var config = require('../shell');
     assert(config.env.mongodb);
