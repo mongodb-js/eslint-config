@@ -6,10 +6,22 @@ module.exports = {
     'eslint-config-mongodb-js',
     'eslint-config-mongodb-js/rules/ecmascript-6'
   ],
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true
+    }
+  },
   parser: 'babel-eslint',
   plugins: [
     'react'
   ],
+  settings: {
+    react: {
+      version: 'detect'
+    }
+  },
   rules: {
     // Prevent missing displayName in a React component definition
     'react/display-name': 0,
