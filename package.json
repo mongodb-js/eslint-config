@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-mongodb-js",
   "description": "eslint sharable configs for mongodb-js.",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "author": "Lucas Hrabovsky <lucas@mongodb.com> (http://imlucas.com)",
   "homepage": "http://github.com/mongodb-js/eslint-config",
   "repository": {
