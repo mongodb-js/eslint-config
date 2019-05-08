@@ -57,15 +57,12 @@ If you're working on a UI project that uses browserify:
 }
 ```
 
-## See Also
+## Related
 
-- [mongodb-js-fmt][mongodb-js-fmt] Look no further if you're not a tailor and/or want
-  something that will just magically reformat your code to conform to these best practices.
 - [mongodb-js-precommit][mongodb-js-precommit] The first line of defense to fighting
   bugs is not letting bad code into your project in the first place.
 - [eslint-plugin-mongodb][eslint-plugin-mongodb] Syntax guidance and best practices
   reinforcement when using MongoDB node.js driver.
-
 
 ## License
 
