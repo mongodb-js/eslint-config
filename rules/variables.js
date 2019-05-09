@@ -1,5 +1,6 @@
 var config = require('./config');
 var ERROR = config.ERROR;
+var WARNING = config.WARNING;
 var IGNORE = config.IGNORE;
 
 /**
@@ -30,11 +31,14 @@ module.exports = {
     // disallow use of undefined variable
     'no-undefined': IGNORE,
     // disallow declaration of variables that are not used in the code
-    'no-unused-vars': [ERROR, {
-      vars: 'local',
-      args: 'after-used'
-    }],
+    'no-unused-vars': [
+      WARNING,
+      {
+        vars: 'local',
+        args: 'after-used'
+      }
+    ],
     // disallow use of variables before they are defined
-    'no-use-before-define': ERROR
+    'no-use-before-define': WARNING
   }
 };

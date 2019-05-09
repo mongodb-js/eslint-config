@@ -19,7 +19,7 @@ module.exports = {
       allowSingleLine: true
     }],
     // require camel case names
-    camelcase: [ERROR, {
+    camelcase: [WARNING, {
       properties: 'never'
     }],
     // enforce spacing before and after comma
