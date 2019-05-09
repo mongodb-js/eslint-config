@@ -16,7 +16,7 @@ module.exports = {
     /**
      * @differ - This is what transform tools are for.
      */
-    'comma-dangle': [ERROR, 'never'],
+    'comma-dangle': [ERROR, 'only-multiline'],
     // disallow assignment in conditional expressions
     'no-cond-assign': [ERROR, 'always'],
     // disallow use of console
