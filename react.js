@@ -2,6 +2,11 @@
  * React.js Apps and Components
  */
 module.exports = {
+  env: {
+    node: true,
+    es6: true,
+    browser: true
+  },
   extends: [
     'eslint-config-mongodb-js',
     'eslint-config-mongodb-js/rules/ecmascript-6'
@@ -14,9 +19,7 @@ module.exports = {
     }
   },
   parser: 'babel-eslint',
-  plugins: [
-    'react'
-  ],
+  plugins: ['react'],
   settings: {
     react: {
       version: 'detect'
@@ -60,20 +63,26 @@ module.exports = {
     // Restrict file extensions that may be required
     'react/require-extension': 0,
     // Prevent extra closing tags for components without children
-    'react/self-closing-comp': [2, {
-      component: true
-    }],
+    'react/self-closing-comp': [
+      2,
+      {
+        component: true
+      }
+    ],
     // Enforce component methods order
-    'react/sort-comp': [2, {
-      order: [
-        'lifecycle',
-        '/^on.+$/',
-        '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
-        'everything-else',
-        '/^render.+$/',
-        'render'
-      ]
-    }],
+    'react/sort-comp': [
+      2,
+      {
+        order: [
+          'lifecycle',
+          '/^on.+$/',
+          '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
+          'everything-else',
+          '/^render.+$/',
+          'render'
+        ]
+      }
+    ],
     // Prevent missing parentheses around multilines JSX
     'react/jsx-wrap-multilines': 2
   }
