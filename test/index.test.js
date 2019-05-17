@@ -9,10 +9,7 @@ describe('eslint-config-mongodb-js', function() {
     var config = require('../');
     assert(isObject(config.rules));
     assert.deepEqual(config.env, {
-      mocha: true,
-      expect: true,
-      sinon: true,
-      es6: true
+      mocha: true
     });
     assert.equal(config.plugins[0], 'chai-friendly');
   });
