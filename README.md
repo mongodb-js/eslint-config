@@ -84,6 +84,12 @@ If you're working on a UI project that uses browserify, your `./.eslintrc` shoul
 
 - Adds `mongodb-js/compass-plugin` config #48
 
+## FAQ
+
+### My editor is now showing unexpected errors
+
+Make sure your editor is using the correct version of `eslint`. If you're using Visual Studio Code, `npm i -g eslint@latest` will resolve this problem.
+
 ## License
 
 Apache 2.0
